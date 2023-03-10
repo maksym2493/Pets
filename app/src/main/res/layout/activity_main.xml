@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/fishButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="Опис"
+        app:layout_constraintBottom_toBottomOf="@id/fishDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/fishName" />
+
+    <TextView
+        android:id="@+id/fishName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/fishImage"
+        app:layout_constraintTop_toTopOf="@+id/fishImage" />
+
+    <ImageView
+        android:id="@+id/dogImage"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/catDescription" />
+
+    <ImageView
+        android:id="@+id/fishImage"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dogDescrioption" />
+
+    <Button
+        android:id="@+id/dogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="Опис"
+        app:layout_constraintBottom_toBottomOf="@+id/dogDescrioption"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/dogName" />
+
+    <TextView
+        android:id="@+id/dogName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/dogImage"
+        app:layout_constraintTop_toTopOf="@+id/dogImage" />
+
+    <ImageView
+        android:id="@+id/catImage"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitStart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/catName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/catImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/catButton"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="20dp"
+        android:text="Опис"
+        app:layout_constraintBottom_toBottomOf="@+id/catDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/catName" />
+
+    <TextView
+        android:id="@+id/catDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxHeight="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/catButton"
+        app:layout_constraintStart_toStartOf="@+id/catName"
+        app:layout_constraintTop_toBottomOf="@+id/catName" />
+
+    <TextView
+        android:id="@+id/dogDescrioption"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxHeight="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/dogImage"
+        app:layout_constraintEnd_toStartOf="@+id/dogButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/dogName"
+        app:layout_constraintTop_toBottomOf="@+id/dogName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/fishDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:maxHeight="100dp"
+        app:layout_constraintEnd_toStartOf="@+id/fishButton"
+        app:layout_constraintStart_toStartOf="@+id/fishName"
+        app:layout_constraintTop_toBottomOf="@+id/fishName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
